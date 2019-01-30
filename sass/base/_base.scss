@@ -1,0 +1,70 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;/*font size default of 10px*/
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: $color-black;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #353f47;
+}
+
+.active {
+    border-bottom-color: rgba($color-white, .8) !important;
+}
+
+.filter {
+    font-weight: 700 !important;
+    color: $color-red !important;
+}
+
+@media (max-width:767px) { //mobile
+    .wrapper { //full width
+        width: 95%;
+        max-width: 70rem;
+        margin: 0 auto;
+        padding: 0rem;
+    }
+
+    body {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .wrapper { //900px
+        width: 100%;
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .wrapper { //1250px
+        width: 100%;
+        max-width: 125rem;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+}

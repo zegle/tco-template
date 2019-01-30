@@ -1,0 +1,101 @@
+.insta {
+    position: relative;
+
+    &-heading {
+        text-align: center;
+        color: $color-white;
+    }
+    &-info {
+        background-color: $color-black;
+        &-text {
+            text-align: center;
+            padding: 2rem 4rem;
+            font-size: 2.6rem;
+            font-weight: 300;
+            color: $color-white;
+        }
+        &-text-2 {
+            padding: 2rem 4rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: $color-white;
+        }
+    }
+
+    &-btn {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &-pic {
+        background-image: url(../images/insta.jpg);
+        background-size: cover;
+        box-shadow: 0 .25rem 2rem rgba($color-black-dark, .15);
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .insta {
+
+        &-info {
+
+            &-text {
+                font-size: 1.6rem;
+                padding: 2rem 2rem;
+
+            }
+             &-text-2 {
+                padding: 2rem 2rem;
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+        &-btn {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .insta {
+
+        &-info {
+
+            &-text {
+                font-size: 2rem;
+
+            }
+            &-text-2 {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+        }
+
+        &-btn {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .insta {
+
+        &-info {
+
+            &-text {
+                font-size: 2.6rem;
+
+            }
+            &-text-2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        &-btn {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.form {
+
+    //might use for mobile form -->  &-group:not(:last-child) {margin-bottom: 2rem;}
+
+    &-title {
+        font-size: 2.2rem;
+    }
+
+    &-input {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-black-light, .05);
+        border: none;
+        border-bottom: 2px solid #ddd;
+        width: 100%;
+        display: block;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid $color-green-dark;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid $color-orange-dark;
+        }
+        &::-webkit-input-placeholder {
+            color: $color-black-light;
+        }
+    }
+
+    &-label {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &-input:placeholder-shown + &-label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .form {
+
+        &-title {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .form {
+
+        &-title {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .form {
+
+        &-title {
+            font-size: 2.2rem;
+        }
+    }
+}

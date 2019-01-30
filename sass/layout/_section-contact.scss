@@ -1,0 +1,76 @@
+.contact-card {
+    border: 1px solid rgba($color-black-light, .4);
+    border-right-color: transparent;
+    border-radius: 3px;
+    padding-bottom: 8rem;
+    &-title {
+        border: 1px solid transparent;
+        border-bottom-color: rgba($color-black-light, .4);
+        text-align: center;
+        padding: 1rem 0 1.5rem 0;
+    }
+    &-text {
+        position: relative;
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0 1.5rem;
+    }
+    &-text i {
+        font-size: 2.2rem;
+        padding: 1rem 1.5rem 0 0;
+    }
+    &-image {
+        position: relative;
+        background-image: url(../images/maps.png);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .contact-card {
+        border-right-color: rgba($color-black-light, .4);
+        padding-bottom: 4rem;
+        margin-bottom: 1rem;
+        &-text {
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+        &-text i {
+            font-size: 1.4rem;
+        }
+        &-image {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .contact-card {
+
+        &-text {
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+        &-text i {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .contact-card {
+
+        &-text {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        &-text i {
+            font-size: 2.2rem;
+        }
+    }
+}

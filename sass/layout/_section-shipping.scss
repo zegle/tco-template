@@ -1,0 +1,52 @@
+.shipping-card {
+
+    &-title {
+        text-align: center;
+        border-bottom: 1px solid $color-black;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    &-text {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .shipping-card {
+
+        &-title {
+            font-size: 1.8rem;
+        }
+        &-text {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            padding: 0 .5rem;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .shipping-card {
+
+        &-title {
+            font-size: 1.8rem;
+        }
+        &-text {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .shipping-card {
+
+        &-title {
+            font-size: 2rem;
+        }
+        &-text {
+            font-size: 2rem;
+        }
+    }
+}

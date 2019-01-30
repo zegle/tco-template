@@ -1,0 +1,138 @@
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0px;
+}
+
+.col-2 {
+    grid-column: auto/span 2;
+}
+.col-3 {
+    grid-column: auto/span 3;
+}
+.col-4 {
+    grid-column: auto/span 4;
+}
+.col-5 {
+    grid-column: auto/span 5;
+}
+.col-6 {
+    grid-column: auto/span 6;
+}
+.col-8 {
+    grid-column: auto/span 8;
+}
+.col-10 {
+    grid-column: auto/span 10;
+}
+.col-12 {
+    grid-column: auto/span 12;
+}
+
+@media (max-width:767px) { //mobile sizing
+    .col-1s {
+        grid-column: auto/span 1;
+    }
+    .col-2s {
+        grid-column: auto/span 2;
+    }
+    .col-3s {
+        grid-column: auto/span 3;
+    }
+    .col-4s {
+        grid-column: auto/span 4;
+    }
+    .col-5s {
+        grid-column: auto/span 5;
+    }
+    .col-6s {
+        grid-column: auto/span 6;
+    }
+    .col-8s {
+        grid-column: auto/span 8;
+    }
+    .col-10s {
+        grid-column: auto/span 10;
+    }
+    .col-12s {
+        grid-column: auto/span 12;
+    }
+    .gap-0s {
+        grid-gap: 0px !important;
+    }
+    .gap-4s {
+        grid-gap: 4px !important;
+    }
+}
+
+@media (min-width:768px) { //tablet
+    .col-2m {
+        grid-column: auto/span 2;
+    }
+    .col-3m {
+        grid-column: auto/span 3;
+    }
+    .col-4m{
+        grid-column: auto/span 4;
+    }
+    .col-5m {
+        grid-column: auto/span 5;
+    }
+    .col-6m {
+        grid-column: auto/span 6;
+    }
+    .col-8m {
+        grid-column: auto/span 8;
+    }
+    .col-10m {
+        grid-column: auto/span 10;
+    }
+    .col-12m {
+        grid-column: auto/span 12;
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .col-2 {
+        grid-column: auto/span 2;
+    }
+    .col-3 {
+        grid-column: auto/span 3;
+    }
+    .col-4 {
+        grid-column: auto/span 4;
+    }
+    .col-5 {
+        grid-column: auto/span 5;
+    }
+    .col-6 {
+        grid-column: auto/span 6;
+    }
+    .col-8 {
+        grid-column: auto/span 8;
+    }
+    .col-10 {
+        grid-column: auto/span 10;
+    }
+    .col-12 {
+        grid-column: auto/span 12;
+    }
+}
+
+.gap-0 {
+    grid-gap: 0px !important;
+}
+
+

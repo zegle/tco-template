@@ -1,0 +1,211 @@
+.product {
+    position: relative;
+    width: 100%;
+
+    &-img-box {
+        position: relative;
+        &-image {
+            border-radius: 3px;
+            max-width: 25rem;
+            width: 100%;
+            height: auto;
+            transform: scale(1.02);
+            backface-visibility: hidden;
+            transition: all .3s;
+        }
+        &-caption{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 20%);
+            font-size: 3rem !important;
+            opacity: 0;
+            transition: all .5s;
+            backface-visibility: hidden; //this fixes animation stuttering
+        }
+        &:hover &-caption {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+        &:hover &-image {
+            transform: scale(1);
+            filter: blur(3px) brightness(60%);
+        }
+    }
+    &-title {
+        margin: .5rem 0 1.5rem 0;
+        font-weight: 400;
+    }
+    &-price {
+        color: $color-black-dark;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    & i {
+        font-size: 1.4rem;
+    }
+
+    &-image-1 {
+        position: relative;
+        background-image: url(../images/product-1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-2 {
+        position: relative;
+        background-image: url(../images/product-2.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-3 {
+        position: relative;
+        background-image: url(../images/product-3.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-4 {
+        position: relative;
+        background-image: url(../images/product-4.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-5 {
+        position: relative;
+        background-image: url(../images/product-5-2.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-6 {
+        position: relative;
+        background-image: url(../images/product-6.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-7 {
+        position: relative;
+        background-image: url(../images/brz.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    &-image-8 {
+        position: relative;
+        background-image: url(../images/product-7.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .product {
+
+        &-image-1 {
+            height: 50vh;
+        }
+        &-image-2 {
+            height: 50vh;
+        }
+        &-image-3 {
+            height: 50vh;
+        }
+        &-image-4 {
+            height: 50vh;
+        }
+        &-image-5 {
+            height: 50vh;
+        }
+        &-image-6 {
+            height: 50vh;
+        }
+        &-image-7 {
+            background-position: center left;
+            height: 50vh;
+        }
+        &-image-8 {
+            height: 50vh;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .product {
+
+        &-image-1 {
+            height: auto;
+        }
+        &-image-2 {
+            height: auto;
+        }
+        &-image-3 {
+            height: auto;
+        }
+        &-image-4 {
+            height: auto;
+        }
+        &-image-5 {
+            height: auto;
+        }
+        &-image-6 {
+            height: auto;
+        }
+        &-image-7 {
+            height: auto;
+        }
+        &-image-8 {
+            height: auto;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .product {
+
+        &-image-1 {
+            height: auto;
+        }
+        &-image-2 {
+            height: auto;
+        }
+        &-image-3 {
+            height: auto;
+        }
+        &-image-4 {
+            height: auto;
+        }
+        &-image-5 {
+            height: auto;
+        }
+        &-image-6 {
+            height: auto;
+        }
+        &-image-7 {
+            height: auto;
+        }
+        &-image-8 {
+            height: auto;
+        }
+    }
+}

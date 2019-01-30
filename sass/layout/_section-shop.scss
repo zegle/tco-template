@@ -1,0 +1,94 @@
+
+
+.filter-list {
+    position: relative;
+    list-style-type: none;
+    &-item {
+        border: 1px solid transparent;
+        padding: 1rem 0;
+    }
+    &-item:not(:last-child) {
+        border-bottom-color: $color-black;
+    }
+    &-item a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-black;
+        font-size: 1.4rem;
+    }
+    &-item a:hover {
+        color: $color-red;
+    }
+}
+
+@media (max-width:767px) { //mobile
+    .filter-list {
+        position: relative;
+        list-style-type: none;
+        &-item {
+            display: inline-block;
+            border: 1px solid transparent;
+            padding: 0;
+        }
+        &-item:not(:last-child) {
+            border-bottom-color: rgba(0,0,0,.3);
+        }
+        &-item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-black;
+            font-size: 1.2rem;
+        }
+        &-item a:hover {
+            color: $color-red;
+        }
+    }
+}
+
+@media (min-width:768px) { //tablets
+    .filter-list {
+        position: relative;
+        list-style-type: none;
+        &-item {
+            display: inline-block;
+            border: 1px solid transparent;
+            padding: 0;
+        }
+        &-item:not(:last-child) {
+            border-bottom-color: rgba(0,0,0,.3);
+        }
+        &-item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-black;
+            font-size: 1.2rem;
+        }
+        &-item a:hover {
+            color: $color-red;
+        }
+    }
+}
+
+@media (min-width:992px) {//regular desktop
+    .filter-list {
+        position: relative;
+        list-style-type: none;
+        &-item {
+            display: block;
+            border: 1px solid transparent;
+            padding: 1rem 0;
+        }
+        &-item:not(:last-child) {
+            border-bottom-color: $color-black;
+        }
+        &-item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-black;
+            font-size: 1.4rem;
+        }
+        &-item a:hover {
+            color: $color-red;
+        }
+    }
+}
